@@ -1,0 +1,11 @@
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+
+development:
+ adapter: sqlite3
+ database: db/development.sqlite3
+
+deployment:
+ adapter: sqlite3
+ database: db/deployment.sqlite3
