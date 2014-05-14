@@ -8,4 +8,4 @@ C, Ruby, Sinatra, ActiveRecord, SQLite3, HTML, cat photos
 
 ## License
 
-[MIT]()
+[MIT](LICENSE)
