@@ -1,5 +1,5 @@
 /* 
- * blink.c
+ * open-buzzer.c
  *
  * Raspberry Pi GPIO example using sysfs interface.
  * Guillermo A. Amaral B. <g@maral.me>
