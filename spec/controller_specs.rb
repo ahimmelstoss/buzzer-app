@@ -1,25 +1,8 @@
 require_relative 'spec_helper'
 
-#TODO: figure out how to move this to helper module
-def admin_login 
-  visit '/'
-  current_path.should == '/login'
-  fill_in('username', :with => @amanda.username)
-  fill_in('password', :with => @amanda.password)
-  click_button 'OPEN DOOR'
-  current_path.should == '/admin'
-  expect(page).to have_content 'Welcome, Amanda!'
-end
-
-def guest_login
-  visit '/'
-  current_path.should == '/login'
-  fill_in('username', :with => @bear.username)
-  fill_in('password', :with => @bear.password)
-  click_button 'OPEN DOOR'
-end
-
 describe 'non admin user actions', :type => :feature do
+  include LoginHelper
+
   it 'successfully logs in' do 
     guest_login
     current_path.should == '/success'
@@ -54,6 +37,8 @@ describe 'non admin user actions', :type => :feature do
 end
 
 describe 'admin user actions', :type => :feaure do
+  include LoginHelper
+
   it 'successfully logs in' do
     admin_login
   end
