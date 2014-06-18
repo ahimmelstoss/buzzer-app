@@ -9,7 +9,7 @@ gem 'pry'
 gem 'require_all'
 
 group :test do
-  gem 'rspec'
+  gem 'rspec', '3.0.0'
   gem 'capybara'
   gem 'rack-test'
   gem 'simplecov'

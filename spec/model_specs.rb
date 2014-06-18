@@ -3,29 +3,29 @@ require_relative 'spec_helper'
 describe Buzzer do 
   it 'should run buzzer command' do 
     buzzer = Buzzer.new
-    buzzer.should_receive('system').with('/usr/local/sbin/open-buzzer')
+    expect(buzzer).to receive('system').with('/usr/local/sbin/open-buzzer')
     buzzer.open_door
   end
 end
 
 describe User do 
   it 'Alex is an admin' do 
-    @alex.admin?.should be_true
+    expect(@alex.admin?).to be true
   end
 
   it 'Amanda is an admin' do 
-    @amanda.admin?.should be_true
+    expect(@amanda.admin?).to be true
   end
 
   it 'Bear is not an admin' do 
-    @bear.admin?.should be_false
+    expect(@bear.admin?).to be false
   end
 
   it 'password matches' do 
-    @bear.password?("honey").should be_true
+    expect(@bear.password?("honey")).to be true
   end
 
   it 'password does not match' do 
-    @bear.password?("Honey").should be_false
+    expect(@bear.password?("Honey")).to be false
   end
 end
