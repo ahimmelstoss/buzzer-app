@@ -2,13 +2,23 @@
 <head>
   <title>Create New User</title>
   <link rel="icon" href="/favicon.ico" type="image/icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
 </head>
 <body>
-  <h2>Create a New User</h2>
-  <form action="/new_user" method="POST">
-      Username: <input type="text" name="username" placeholder="username"><br>
-      Password: <input type="password" name="password" placeholder="password"><br>
-  <input type="submit" value="CREATE USER">
-  </form>
+  <div class="total-newuser">
+    <div class="jumbotron center custom">
+      <div class="button-centered">
+          <h2>Create a New User</h2>
+          <form action="/new_user" method="POST" class="form-inline">
+            <div class="form-custom">
+              Username: <input type="text" name="username" placeholder="username" class="form-control"><br>
+              Password: <input type="password" name="password" placeholder="password" class="form-control"><br>
+            </div>
+            <input type="submit" value="CREATE USER" class="btn btn-success btn-lg">
+          </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

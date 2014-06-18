@@ -2,15 +2,24 @@
 <head>
 	<title>Buzzer - Please log in</title>
 	<link rel="icon" href="/favicon.ico" type="image/icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
 </head>
 <body>
-	<h2>Welcome to Court Street Buzzer</h2>
-  <h3>Guests, please log in to open the door</h3>
-	<img src="/cats-door.jpg" alt="cats">
-	<form action="/login" method="POST">
-      Username: <input type="text" name="username" placeholder="username"><br>
-      Password: <input type="password" name="password" placeholder="password"><br>
-	<input type="submit" value="OPEN DOOR">
-	</form>
+  <div class="total-login">
+    <div class="jumbotron center custom">
+      <div class="button-centered">
+      	<h2>Welcome to Court Street Buzzer</h2>
+        <h3>Guests, please log in to open the door</h3>
+        <form action="/login" method="POST" class="form-inline">
+          <div class="form-custom">
+            Username: <input type="text" name="username" placeholder="username" class="form-control"><br>
+            Password: <input type="password" name="password" placeholder="password" class="form-control"><br>
+          </div>
+      	<input type="submit" value="OPEN DOOR" class="btn btn-success btn-lg">
+      	</form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

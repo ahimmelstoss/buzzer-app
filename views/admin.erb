@@ -2,15 +2,22 @@
 <head>
   <title>Admin Panel</title>
   <link rel="icon" href="/favicon.ico" type="image/icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
 </head>
 <body>
+  <div class="total-admin">
+    <div class="jumbotron center custom">
+      <div class="button-centered">
+        <h2>Welcome, <%= @user.username %>!</h2>
+        <h3>What would you like to do?</h3>
 
-  <h2>Welcome, <%= @user.username %>!</h2>
-  <h3>What would you like to do?</h3>
-
-  <a href="/new_user">Create New User</a><br>
-  <a href="/buzz">Buzz Door Open (this will log you out)</a><br>
-  <a href="/logout">Log Out</a>
+        <a href="/new_user" class="btn btn-success btn-lg">Create New User</a><br>
+        <a href="/buzz" class="btn btn-success btn-lg">Buzz Door Open (this will log you out)</a><br>
+        <a href="/logout" class="btn btn-success btn-lg">Log Out</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
