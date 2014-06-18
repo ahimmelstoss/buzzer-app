@@ -4,8 +4,8 @@ Our Buzzer App runs on a Raspberry Pi connected to an apartment buzzer/intercom.
 
 ## Stack
 
-C, Ruby, Sinatra, ActiveRecord, SQLite3, HTML, cat photos
+C, Ruby, Sinatra, ActiveRecord, HTML, cat photos
 
 ## License
 
-[MIT]()
+[MIT](LICENSE)

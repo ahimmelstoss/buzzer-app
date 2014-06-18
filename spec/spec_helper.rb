@@ -6,6 +6,7 @@ end
 ENV["SINATRA_ENV"] = "test"
 
 require_relative '../config/environment'
+require_relative './support/login_helper.rb'
 require 'rack/test'
 require 'capybara/rspec'
 require 'capybara/dsl'
@@ -19,7 +20,6 @@ RSpec.configure do |config|
   config.filter_run :focus
   config.include Rack::Test::Methods
   config.include Capybara::DSL
-
   config.before(:all) do
     @bear = User.create(username: "Bear", password: "honey")
     @alex = User.create(username: "Alex", password: "password")
