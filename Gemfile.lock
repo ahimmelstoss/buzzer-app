@@ -95,6 +95,7 @@ DEPENDENCIES
   capybara
   capybara-webkit
   database_cleaner!
+  json
   pry
   rack-test
   rake

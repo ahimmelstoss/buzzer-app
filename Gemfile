@@ -7,6 +7,7 @@ gem 'rake'
 gem 'sqlite3'
 gem 'pry'
 gem 'require_all'
+gem 'json'
 
 group :test do
   gem 'rspec', '3.0.0'
